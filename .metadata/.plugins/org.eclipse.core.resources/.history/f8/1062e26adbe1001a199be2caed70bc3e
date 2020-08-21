@@ -1,0 +1,12 @@
+package com.demo;
+
+import java.util.Random;
+
+public class Practise {
+
+	public static void main(String[] args) {
+		
+        System.out.println("Number");
+	}
+
+}

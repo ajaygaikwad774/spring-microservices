@@ -1,0 +1,17 @@
+package com.demo;
+
+
+public class JdbcConnection {
+	
+	public static void main(String[] args) {
+		
+		
+	}
+	
+	
+	void save () {
+		
+		
+	}
+
+}

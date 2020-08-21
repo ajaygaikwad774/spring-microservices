@@ -1,0 +1,5 @@
+package com.developer.photoapp.ui.model;
+
+public class Users {
+
+}

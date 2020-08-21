@@ -1,0 +1,23 @@
+package com.demo;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class JdbcConnection {
+	
+	public static void main(String[] args) {
+		
+		Connection con =  null;
+		try {
+			
+			Class.forName("com.mysql.jdbc.Driver");   //Regsiteration
+			con = DriverManager.getConnection(url)
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		
+	}
+	
+
+}

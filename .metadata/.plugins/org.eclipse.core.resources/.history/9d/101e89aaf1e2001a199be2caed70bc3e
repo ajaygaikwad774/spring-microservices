@@ -1,0 +1,9 @@
+package com.developer.photoapp.ui.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.developer.photoapp.ui.model.Users;
+
+public interface UsersRepository extends JpaRepository<Users, Long> {
+
+}

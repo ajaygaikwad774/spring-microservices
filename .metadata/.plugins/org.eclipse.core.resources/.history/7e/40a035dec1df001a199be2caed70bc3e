@@ -1,0 +1,5 @@
+package com.mobile.app.ws.ui.exception;
+
+public class WebApplicationExceptionHandler {
+
+}

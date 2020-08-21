@@ -1,0 +1,18 @@
+package com.demo;
+
+import java.util.Random;
+
+public class Practise {
+
+	public static void main(String[] args) {
+		
+		Random otp  =new Random();
+
+        StringBuilder builder=new StringBuilder();
+        for(int count=0; count<=10;count++) {
+            builder.append(otp.nextInt(10));
+        }
+        System.out.println("Number"+builder.toString());
+	}
+
+}

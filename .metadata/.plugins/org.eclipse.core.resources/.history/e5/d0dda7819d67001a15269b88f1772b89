@@ -1,0 +1,8 @@
+package com.demo;
+
+public class ArrayExample {
+
+	int[] array = new int[6];
+	
+	
+}

@@ -8,4 +8,6 @@ import com.developer.photoapp.ui.model.Users;
 @Repository
 public interface UsersRepository extends JpaRepository<Users, Long> {
 
+	Users findByEmail(String email);
+	
 }

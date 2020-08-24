@@ -12,7 +12,7 @@ import com.developer.photoapp.ui.repository.UsersRepository;
 
 @Service
 @Transactional
-public class UserService {
+public class UserService  {
 
 	@Autowired
 	UsersRepository usersRepository;
@@ -22,4 +22,13 @@ public class UserService {
 		user.setUserId(UUID.randomUUID().toString());
 		return usersRepository.save(user);
 	}
+
+
+	/*
+	 * @Override public UserDetails loadUserByUsername(String username) throws
+	 * UsernameNotFoundException { Users user =
+	 * usersRepository.findByEmail(username); if (user == null) { throw new
+	 * UsernameNotFoundException(username); } return new User(user.getEmail(),
+	 * user.getPassword(), true, true, true, true, new ArrayList<>()); }
+	 */
 }

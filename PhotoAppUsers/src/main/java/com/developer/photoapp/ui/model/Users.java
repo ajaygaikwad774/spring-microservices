@@ -10,6 +10,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.validation.constraints.Email;
+import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
@@ -35,11 +36,11 @@ public class Users {
 	@Column(nullable = false, length = 50)
 	private String name;
 	
-	@NotNull(message = "email cannot be null")
+	@NotBlank(message = "email cannot be null")
 	@Email(message = "Please enter valid email address")
 	@Pattern(regexp = "^[_A-Za-z0-9-\\.+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$", message = "Please enter valid email address")
 	@Column(nullable = false, unique = true, length = 120)
-	private String email;
+	private String email; 
 	
 	@NotNull(message = "password cannot be null")
 	@Size(min = 8, max = 16, message = "password must be equal or greater than 8 character and less than 16 character")	
